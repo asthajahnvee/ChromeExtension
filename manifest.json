@@ -1,0 +1,15 @@
+{
+    "name": "DayDiary",
+    "version": "0.0.1",
+    "description": "Keep track of your days with DayDiary!",
+    "manifest_version": 3, 
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo.png"
+    },
+    "options_page": "options.html",
+    "icons": {
+        "128": "logo.png"
+    },
+    "permissions": [ "activeTab", "storage"]
+}

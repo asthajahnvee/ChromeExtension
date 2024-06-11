@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <div class="main">
+        <!-- title of the extension -->
+        <div class="heading">
+            <h2>Diary of the Day</h2>
+            <a href="./options.html">
+                <button>
+                    <img src="../assets/pawdata.png" alt="button for previous day logs">
+                </button>
+            </a>
+        </div>
+        <img src="../assets/catcute.png" alt="cat img asking how's your day?">
+        <!-- function of extention which gets input from user -->
+        <form method="get">
+            <!-- for mood selection -->
+            
+            <h3>Mood of the day is</h3>
+            <div id="mood">
+                
+                <label for="happy" title="happy">
+                    <input type="radio" id="happy" name="mood" value="happy">
+                    <img src="../assets/Whitecat.png" alt="white cat showing happiness">
+                </label>
+                <label for="Productive" title="Productive">
+                    <input type="radio" id="Productive" name="mood" value="Productive">
+                    <img src="../assets/orangecat.png" alt="orange cat showing playfulness">
+                </label>
+                
+                <label for="Lazy" title="Lazy">
+                    <input type="radio" id="Lazy" name="mood" value="Lazy">
+                    <img src="../assets/Greycat.png" alt="grey cat showing laziness">
+                </label>
+                
+                <label for="stress" title="stress">
+                    <input type="radio" id="stress" name="mood" value="stress">
+                    <img src="../assets/Blackcat.png" alt="black cat showing sadness">
+                </label>
+
+            </div>
+            <!-- for day tag -->
+            <input type="text" id="diarytag" name="diarytag" placeholder="What would you call this day?" maxlength="25" > <!-- onblur="this.placeholder='What would you call this day?'" onfocus="this.placeholder=''"-->
+            <!-- for day diary -->
+            <textarea name="daylog" id="daylog" placeholder="Tell me your story of the day!!" maxlength="250" required></textarea>
+            <!-- Submit -->
+            <input type="submit" id="submit" value="submit">
+                
+            </button>
+        </form>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+</html>

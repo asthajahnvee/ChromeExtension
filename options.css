@@ -1,0 +1,142 @@
+.freehand-regular {
+    font-family: "Freehand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{  
+    margin: 0;
+    padding: 0;
+    /* width: 300px; */
+    box-sizing: border-box;
+    background-color: #fdf0d5;
+    /* cursor: url('./paww.png'), auto; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf0d5;
+
+}
+/* .filed{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf0d5;
+} */
+.records{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+.title{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem;
+}
+.title h3{
+    text-wrap:nowrap;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-family: 'Freehand', cursive;
+}
+.title img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.container .content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 300px;
+    margin: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #472a27 1px solid;
+    border-radius: 15px;
+}
+.content div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.content .img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+.content .img img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.content .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 200px;
+}
+.content .info h4{
+    font-size: 15px;
+    font-family: 'Freehand', cursive;
+    text-align: left;
+    min-width: 200px;
+    text-wrap: wrap;
+}
+.content .info p{
+    font-size: 12px;
+    font-family: cursive, 'Freehand', sans-serif;
+    text-align: left;
+    max-width: 200px;
+    text-wrap: wrap;
+}
+/* EDIT/ DELETE BTNS
+.info .btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info .btns span:last-child{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.info .btns button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 7px;
+    border-radius: 5px;
+    border: #472a27 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2px;
+}
+.info img{
+    width: 10px;
+    height: 10px;
+}
+.info .btns span{
+    font-size: 10px;
+    font-family: cursive, 'Freehand', sans-serif;
+    color: rgba(71, 42, 39, 0.7);
+} */

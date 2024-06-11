@@ -1,0 +1,146 @@
+.freehand-regular {
+    font-family: "Freehand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdf0d5;
+    /* cursor: url('./paww.png'), auto; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* <for all> */
+.main{
+    height: 100vh;
+    width: 300px;
+}
+/* for heading and options */
+.heading h2{
+    text-align: center ;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #472a27;
+    font-family: 'Freehand', cursive;
+}
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2.5px solid #472a27;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    outline: none;
+}
+.heading button img{
+    width: 25px;
+    height: 25px;
+}
+/* for main image */
+.main >img{
+    position: relative;
+    margin: 20px;
+    /* margin-top: 20px; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* for form elements */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form h3{
+    font-size: 1.4rem;
+    color: #472a27;
+    font-family: 'Freehand', cursive;
+}
+/* for mood */
+.mood{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+}
+form .mood label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #472a27;
+    font-family: 'Freehand', cursive;
+}
+[type=radio]:checked + img {
+    border: solid 2px #472a27;
+}
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+label img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} 
+/* for form input text and textarea*/
+form >input{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #472a27;
+    border-radius: 5px;
+    outline: none;
+    font-family: cursive, 'Freehand';
+}
+form >textarea{
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    height: 100px;
+    border: 1px solid #472a27;
+    border-radius: 5px;
+    outline: none;
+    font-family: cursive, 'Freehand';
+}
+form >input[type="submit"]{
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    padding: 3px 19px 3px 19px;
+    border: 1px solid #472a27;
+    border-radius: 5px;
+    outline: none;
+    background-color: #472a27;
+    color: #fdf0d5;
+    font-size: 20px;
+    font-family: cursive, 'Freehand';
+    margin-bottom: 20px;
+}
+form>input[type="submit"]:hover{
+    text-decoration: underline 2px solid #fdf0d5;
+    text-decoration-style:wavy ;  
+    text-underline-offset: 2px;
+}
+
+

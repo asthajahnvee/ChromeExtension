@@ -1,0 +1,71 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the form and input elements
+  const form = document.querySelector('form');
+  //const mood = document.getElementById('mood').value;
+  const diaryTag = document.getElementById('diarytag');
+  const dayLog = document.getElementById('daylog');
+    
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from being submitted
+      let moodImg;
+      let diaryTagValue = diaryTag.value;
+      let dayLogValue = dayLog.value;
+      // if(mood == 'happy'){
+      //   moodImg = './Whitecat.png';
+      // }
+      // else if(mood == 'Productive'){
+      //   moodImg = './orangecat.png';
+      // }
+      // else if(mood == 'Lazy'){
+      //   moodImg = './greycat.png';
+      // }
+      // else if(mood == 'stress'){
+      //   moodImg = './blackcat.png';
+      // }
+      // else{
+      //   alert('Please select a mood');
+      // }
+      // Get the existing entries from chrome storage
+      chrome.storage.sync.get('entries', function(result) {
+        let entries = result.entries || [];
+  
+        // Add the new entry to the array
+        entries.push({mood:moodImg, diaryTag: diaryTagValue, dayLog: dayLogValue});
+  
+        // Store the updated array in chrome storage
+        chrome.storage.sync.set({entries: entries}, function() {
+          console.log('Entries are updated');
+        });
+      });
+    });
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the container element
+    const container = document.querySelector('.container');
+  
+    // Get the entries from chrome storage
+    chrome.storage.sync.get('entries', function(result) {
+      let entries = result.entries || [];
+  
+      // Loop through the entries and create a new div for each one
+      entries.forEach(function(entry) {
+        let div = document.createElement('div');
+  
+        let img = document.createElement('img');
+        img.src = entry.mood;
+        div.appendChild(img);
+
+        let h4 = document.createElement('h4');
+        h4.textContent = entry.diaryTag;
+        div.appendChild(h4);
+  
+        let p = document.createElement('p');
+        p.textContent = entry.dayLog;
+        div.appendChild(p);
+  
+        container.appendChild(div);
+      });
+    });
+  });
